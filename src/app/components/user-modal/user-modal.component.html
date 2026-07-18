@@ -1,0 +1,117 @@
+<!-- Add / Edit User Modal -->
+<div
+  class="modal fade"
+  id="userModal"
+  tabindex="-1"
+  aria-labelledby="userModalLabel"
+  aria-hidden="true"
+  #modalEl>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="userModalLabel">{{ modalTitle }}</h5>
+        <button
+          type="button"
+          class="btn-close"
+          aria-label="Close"
+          (click)="onClose()">
+        </button>
+      </div>
+
+      <!-- Body -->
+      <div class="modal-body">
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+
+          <!-- Name -->
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              id="name"
+              type="text"
+              class="form-control"
+              formControlName="name"
+              [class.is-invalid]="f['name'].touched && f['name'].invalid"
+              placeholder="Enter name">
+            <div class="invalid-feedback" *ngIf="f['name'].touched && f['name'].errors?.['required']">
+              Name is required.
+            </div>
+            <div class="invalid-feedback" *ngIf="f['name'].touched && f['name'].errors?.['pattern']">
+              Name must contain alphabets only. No numbers or special characters.
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              id="email"
+              type="email"
+              class="form-control"
+              formControlName="email"
+              [class.is-invalid]="f['email'].touched && f['email'].invalid"
+              placeholder="Enter email">
+            <div class="invalid-feedback" *ngIf="f['email'].touched && f['email'].errors?.['required']">
+              Email is required.
+            </div>
+            <div class="invalid-feedback" *ngIf="f['email'].touched && f['email'].errors?.['email']">
+              Please enter a valid email address.
+            </div>
+          </div>
+
+          <!-- Contact -->
+          <div class="mb-3">
+            <label for="contact" class="form-label">Contact</label>
+            <input
+              id="contact"
+              type="text"
+              class="form-control"
+              formControlName="contact"
+              [class.is-invalid]="f['contact'].touched && f['contact'].invalid"
+              maxlength="10"
+              placeholder="Enter 10-digit contact starting with 99">
+            <div class="invalid-feedback" *ngIf="f['contact'].touched && f['contact'].errors?.['required']">
+              Contact is required.
+            </div>
+            <div class="invalid-feedback" *ngIf="f['contact'].touched && f['contact'].errors?.['pattern']">
+              Must be exactly 10 digits and start with 99.
+            </div>
+          </div>
+
+          <!-- Address -->
+          <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <input
+              id="address"
+              type="text"
+              class="form-control"
+              formControlName="address"
+              [class.is-invalid]="f['address'].touched && f['address'].invalid"
+              placeholder="Enter address">
+            <div class="invalid-feedback" *ngIf="f['address'].touched && f['address'].errors?.['required']">
+              Address is required.
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" (click)="onClose()">Cancel</button>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              [disabled]="userForm.invalid || isSaving">
+              <span *ngIf="isSaving" class="spinner-border spinner-border-sm me-1" role="status"></span>
+              {{ isSaving ? 'Saving...' : (isEditMode ? 'Update' : 'Add') }}
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Backdrop (shown when modal is open) -->
+<div class="modal-backdrop fade show" *ngIf="false"></div>

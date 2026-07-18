@@ -1,0 +1,29 @@
+/* ── Table ─────────────────────────────────────────────── */
+.table th.sortable-th {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.table th.sortable-th:hover {
+  background-color: #495057;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+/* ── Pagination ────────────────────────────────────────── */
+.pagination .page-link {
+  cursor: pointer;
+}
+
+/* ── Delete confirmation modal override ────────────────── */
+#deleteConfirmModal.show {
+  display: block;
+}
+
+/* ── Sort icon sizing ──────────────────────────────────── */
+.bi {
+  font-size: 0.85rem;
+}

@@ -1,0 +1,40 @@
+<form [formGroup]="register" (ngSubmit)="onSubmit()" >
+
+Name : <input type="text" placeholder="Enter the name"  formControlName="name" >
+
+
+<p>{{ register.get('name')?.value }}</p>
+
+  <button type="submit" >Submit</button>
+
+
+<br>
+<br>
+
+
+
+
+  <table>
+
+    <tr>
+        <th>Name</th>
+        <th>Action</th>
+    </tr>
+
+    <tr *ngFor="let user of registers">
+        <td>
+            {{user.name}}
+        </td>
+
+        <td>
+            <button (click)="deltetheuser(user.id!)">delete</button>
+        </td>
+
+         <td>
+            <button (click)="updaetuser(user)">update</button>
+        </td>
+    </tr>
+  </table>
+
+
+</form>

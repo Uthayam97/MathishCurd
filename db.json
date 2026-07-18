@@ -1,0 +1,187 @@
+{
+  "users": [
+    {
+      "name": "James Wilson",
+      "email": "james.wilson@example.com",
+      "contact": "9956789014",
+      "address": "654 Maple Drive, Phoenix",
+      "id": "5"
+    },
+    {
+      "id": "6",
+      "name": "Sophia Martinez",
+      "email": "sophia.martinez@example.com",
+      "contact": "9967890123",
+      "address": "987 Cedar Lane, San Antonio"
+    },
+    {
+      "id": "7",
+      "name": "Benjamin Taylor",
+      "email": "benjamin.taylor@example.com",
+      "contact": "9978901234",
+      "address": "147 Birch Boulevard, San Diego"
+    },
+    {
+      "id": "8",
+      "name": "Isabella Anderson",
+      "email": "isabella.anderson@example.com",
+      "contact": "9989012345",
+      "address": "258 Walnut Way, Dallas"
+    },
+    {
+      "id": "9",
+      "name": "Lucas Thomas",
+      "email": "lucas.thomas@example.com",
+      "contact": "9990123456",
+      "address": "369 Spruce Court, San Jose"
+    },
+    {
+      "id": "11",
+      "name": "Henry White",
+      "email": "henry.white@example.com",
+      "contact": "9911122233",
+      "address": "852 Poplar Place, Jacksonville"
+    },
+    {
+      "id": "12",
+      "name": "Charlotte Harris",
+      "email": "charlotte.harris@example.com",
+      "contact": "9922233344",
+      "address": "963 Sycamore Circle, Fort Worth"
+    },
+    {
+      "id": "13",
+      "name": "Alexander Clark",
+      "email": "alexander.clark@example.com",
+      "contact": "9933344455",
+      "address": "159 Magnolia Terrace, Columbus"
+    },
+    {
+      "id": "14",
+      "name": "Amelia Lewis",
+      "email": "amelia.lewis@example.com",
+      "contact": "9944455566",
+      "address": "357 Redwood Rise, Charlotte"
+    },
+    {
+      "id": "15",
+      "name": "Daniel Robinson",
+      "email": "daniel.robinson@example.com",
+      "contact": "9955566677",
+      "address": "486 Aspen Alley, Indianapolis"
+    },
+    {
+      "id": "16",
+      "name": "Harper Walker",
+      "email": "harper.walker@example.com",
+      "contact": "9966677788",
+      "address": "624 Cypress Close, San Francisco"
+    },
+    {
+      "id": "17",
+      "name": "Matthew Hall",
+      "email": "matthew.hall@example.com",
+      "contact": "9977788899",
+      "address": "713 Juniper Junction, Seattle"
+    },
+    {
+      "id": "18",
+      "name": "Evelyn Allen",
+      "email": "evelyn.allen@example.com",
+      "contact": "9988899900",
+      "address": "835 Hazel Heath, Denver"
+    },
+    {
+      "id": "19",
+      "name": "Sebastian Young",
+      "email": "sebastian.young@example.com",
+      "contact": "9999900011",
+      "address": "947 Chestnut Corner, Washington"
+    },
+    {
+      "id": "20",
+      "name": "Abigail King",
+      "email": "abigail.king@example.com",
+      "contact": "9900011122",
+      "address": "168 Dogwood Drive, Nashville"
+    },
+    {
+      "id": "21",
+      "name": "David Scott",
+      "email": "david.scott@example.com",
+      "contact": "9911133344",
+      "address": "279 Hickory Hill, Oklahoma City"
+    },
+    {
+      "id": "22",
+      "name": "Emily Green",
+      "email": "emily.green@example.com",
+      "contact": "9922244455",
+      "address": "381 Larch Lane, El Paso"
+    },
+    {
+      "id": "23",
+      "name": "Joseph Baker",
+      "email": "joseph.baker@example.com",
+      "contact": "9933355566",
+      "address": "492 Fir Flat, Boston"
+    },
+    {
+      "id": "24",
+      "name": "Ella Adams",
+      "email": "ella.adams@example.com",
+      "contact": "9944466677",
+      "address": "503 Hemlock Hollow, Portland"
+    },
+    {
+      "id": "25",
+      "name": "Samuel Nelson",
+      "email": "samuel.nelson@example.com",
+      "contact": "9955577788",
+      "address": "614 Tamarack Trail, Las Vegas"
+    },
+    {
+      "id": "26",
+      "name": "Grace Hill",
+      "email": "grace.hill@example.com",
+      "contact": "9966688899",
+      "address": "725 Ironwood Isle, Memphis"
+    },
+    {
+      "id": "27",
+      "name": "Andrew Campbell",
+      "email": "andrew.campbell@example.com",
+      "contact": "9977799900",
+      "address": "836 Sweetgum Street, Louisville"
+    },
+    {
+      "id": "28",
+      "name": "Chloe Mitchell",
+      "email": "chloe.mitchell@example.com",
+      "contact": "9988800011",
+      "address": "947 Gumtree Grove, Baltimore"
+    },
+    {
+      "id": "29",
+      "name": "Joshua Roberts",
+      "email": "joshua.roberts@example.com",
+      "contact": "9999911122",
+      "address": "158 Locust Loop, Milwaukee"
+    },
+    {
+      "id": "30",
+      "name": "Lily Carter",
+      "email": "lily.carter@example.com",
+      "contact": "9900022233",
+      "address": "269 Pinecrest Path, Albuquerque"
+    },
+    {
+      "name": "Uthayam",
+      "email": "admin@gmail.com",
+      "contact": "9990909090",
+      "address": "24,west street ,Ventrilinga puram",
+      "id": "F3tpMTZTAPs"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
